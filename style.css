@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #bfa8ff 83.19%);
+  font-family: "Roboto Slab", serif;
+}
+
+.container {
+  background: #333439;
+  margin: 64px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  padding: 64px;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  border-radius: 400px;
+  max-width: 180px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 800;
+  font-size: 36px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo h3 {
+  font-weight: 600;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 16px;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 200px;
+  border: 3px solid #0e1d2f;
+  transform: translateX(430px);
+  font-weight: 600;
+}
+
+.menu {
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #bfa8ff 83.19%);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 34px;
+  padding: 34px;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+}
+
+#cabeca {
+  animation: anima 1.8s ease 1.3s normal forwards;
+  opacity: 0;
+  transform: translateX(500px);
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes anima {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.portfolio {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+#projeto {
+  animation: anima2 1.8s ease 1.3s normal forwards;
+  opacity: 0;
+  transform: translateX(-500px);
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 8px 32px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  max-height: 300px;
+}
+
+#projeto ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projeto li {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+#projeto a {
+  text-decoration: none;
+}
+
+@keyframes anima2 {
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.redi {
+  position: relative;
+  top: -20px;
+  word-spacing: 5px;
+}
+
+.icone {
+  transition: transform 0.3s;
+}
+
+.icone:hover {
+  transition: transform 0.3s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.dark .container {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border: 1.8px solid #1c1c1c;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ecf4ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #ecf4ff;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  margin: 15px 0px;
+}
+
+#conquistas {
+  animation: anima2 1.8s ease 1.3s normal forwards;
+  opacity: 0;
+  transform: translateY(500px);
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 8px 32px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  max-height: 300px;
+  align-items: center;
+}
+
+#conquistas ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#conquistas li {
+  list-style-type: none;
+}
+
+#conquistas img {
+  max-height: 100px;
+}
